@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+.leftBar1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leftBar1 h2 {
+    font-size: 40px;
+    color: rgb(31, 102, 160);
+}
+.leftBar1 form {
+    margin-top: 6%;
+    width: 400px;
+    height: 600px;
+
+}
+
+.field {
+    height: 35px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.btn {
+    width: 100px;
+    height: 60px;
+    margin-left: 10% ;
+    border-radius: 10px;
+    background-color: rgb(166, 201, 214);
+}
+
+.btn:hover {
+    width: 100px;
+    height: 60px;
+    margin-left: 10% ;
+    border-radius: 10px;
+    background-color: rgb(11, 11, 155);
+    color: white;
+    transition: 0.3s ease;
+}
+
+.asiri {
+ width: 70%;
+}
+
+.container1 {
+    width:  100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(92, 92, 235);
+}
+
+.header {
+ position: absolute;
+ top: 5%;
+}
+
+.tables {
+    position: relative;
+    top: 7.6%;
+    width: 100%;
+    height: 85%;
+}
+
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.customer {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(224, 224, 241);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.upperBar {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(12, 42, 80); 
+}
+
+.lowerBar {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(12, 42, 80); 
+    position: absolute;
+    bottom: 0;
+}
+
+.Header {
+    width: 100%;
+    height: 100px;
+    border: 1px solid rgb(24, 24, 116);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header h1 {
+    color:rgb(23, 74, 139); 
+    font-size: 50px;
+    text-align: center;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.table-container {
+    width: 95%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 400px; /* Set maximum height for the table container */
+    overflow-y: auto; /* Vertical overflow scroll */
+}
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .responsive-table th,
+  .responsive-table td {
+    padding: 8px; /* Adjust padding as needed */
+    white-space: nowrap; /* Prevents text wrapping */
+  }
+
+.responsive-table th {
+    background-color: #f2f2f2;
+}
+
+.update-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 4px;
+  }
+  
+  .delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+    .responsive-table {
+        overflow-x: auto;
+    }
+    .responsive-table th, .responsive-table td {
+        white-space: nowrap;
+    }
+}
+
+.btn10 {
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.updateContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: green;
+    height: 100vh; 
+    transform: translateX(100%);
+    transition: 0.3s;
+}
+
+
+

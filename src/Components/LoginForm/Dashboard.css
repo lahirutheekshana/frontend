@@ -1,0 +1,675 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body {
+    background: #dfe9f5;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+}
+
+nav{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    background-color: #fff;
+    width: 19%;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+
+nav ul a {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 10px;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.logo span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+a {
+    position: relative;
+    color: rgb(85,83,83);
+    font-size: 14px;
+    display: table;
+    width: 280px;
+    height: 60px;
+    padding: 10px;
+}
+
+nav .fas {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.container nav ul li a:hover {
+    background: #eee;
+}
+
+.logout {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Main Section */
+/*.main {
+    position: relative;
+    padding: 20px;
+    width: 90%;
+    border: 1px solid blue;
+    height: 100vh;
+    display: none;
+} MOVE TO DOWN DOWN DOWN */
+
+.main-top {
+    display: flex;
+    width: 100%;
+    width: 100%;
+}
+
+.main-top i {
+    position: absolute;
+    right: 0;
+    margin: 10px 30px;
+    color: rgb(11,109,109);
+    cursor: pointer;
+}
+
+.main-skills {
+    display: flex;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.main-skills .card {
+    width: 25%;
+    margin: 10px;
+    background: #fff;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+
+.main-skills .card h3 {
+  margin: 10px;
+  text-transform: capitalize;
+}
+
+.main-skills .card p {
+   font-size: 12px
+}
+
+
+/*.main-skills .card button {
+    background:orangered;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+ }*/
+
+ .main-skills .card button:hover {
+    background: rgba(223,70,15,0.856);
+ }
+
+ .main-skills .card i {
+    font-size: 22px;
+    padding: 10px;
+ }
+
+.amount {
+    color: rgba(255, 0, 0, 0.534);
+}
+
+.amountPen {
+    color: rgba(173, 134, 4, 0.815);
+}
+ 
+.amountCom {
+    color: rgba(3, 90, 42, 0.589);
+}
+ 
+.cardItem {
+    width: 100%;
+    height: 130px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardItem .item {
+    width: 23%;
+    height: 80%;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#item1 {
+    background-color: rgba(0, 128, 0, 0.699);
+    transition: ease 0.3s;
+}
+
+#item1:hover {
+    background-color: rgb(13, 201, 13);
+}
+
+#item2 {
+    background-color: rgb(160, 105, 2);
+    transition: ease 0.3s;
+}
+
+#item2:hover {
+    background-color: rgb(230, 153, 10);
+}
+
+#item3 {
+    background-color: rgba(128, 0, 128, 0.651);
+    transition: ease 0.3s;
+}
+
+#item3:hover {
+    background-color: rgba(255, 0, 0, 0.959);
+    background-color: rgba(226, 5, 226, 0.726);
+}
+
+#item4 {
+    background-color: rgba(173, 20, 20, 0.692);
+    transition: ease 0.3s;
+}
+
+#item4:hover {
+    background-color: rgb(255, 8, 8);
+}
+
+.cardItem .item h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cardItem .item h4 label{
+   color: white;
+}
+
+.rightContainer {
+    height: auto;
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.rightContainer .RightCard{
+   height: 46.5%;
+   width: 90%;
+   margin-left: 5%;
+   margin-top: 2%;
+   border-radius: 8px;
+   background: #1d4980;
+}
+
+ 
+/* Calender */
+
+.outer {
+    height: 46%;
+    width: 96%;
+    margin-top: 3%;
+    margin-left: 2%;
+    border-radius: 8px;
+    background:rgb(13, 201, 13);  
+}
+
+:root {
+    --dark-body: #4d4c5a;
+    --dark-main: #ffffff;
+    --dark-second: #79788c;
+    --dark-hover: #323048;
+    --dark-text: #f8fbff;
+
+    --light-body: #f3f8fe;
+    --light-main: #fdfdfd;
+    --light-second: #c3c2c8;
+    --light-hover: #edf0f5;
+    --light-text: #151426;
+
+    --blue: #0000ff;
+    --white: #fff;
+
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    --font-family: cursive;
+}
+
+.dark {
+    --bg-body: var(--dark-body);
+    --bg-main: var(--dark-main);
+    --bg-second: var(--dark-second);
+    --color-hover: var(--dark-hover);
+    --color-txt: var(--dark-text);
+}
+
+.light {
+    --bg-body: var(--light-body);
+    --bg-main: var(--light-main);
+    --bg-second: var(--light-second);
+    --color-hover: var(--light-hover);
+    --color-txt: var(--light-text);
+}
+
+.calendar {
+    height: max-content;
+    width: max-content;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    /* transform: scale(1.25); */
+}
+
+.light .calendar {
+    box-shadow: var(--shadow);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--color-txt);
+    padding: 10px;
+}
+
+.calendar-body {
+    padding: 10px;
+}
+
+.calendar-week-day {
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: 600;
+}
+
+.calendar-week-day div {
+    display: grid;
+    place-items: center;
+    color: var(--bg-second);
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    color: var(--color-txt);
+}
+
+.calendar-days div {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    animation: to-top 1s forwards;
+    /* border-radius: 50%; */
+}
+
+.calendar-days div span {
+    position: absolute;
+}
+
+.calendar-days div:hover span {
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+.calendar-days div span:nth-child(1),
+.calendar-days div span:nth-child(3) {
+    width: 2px;
+    height: 0;
+    background-color: var(--color-txt);
+}
+
+.calendar-days div:hover span:nth-child(1),
+.calendar-days div:hover span:nth-child(3) {
+    height: 100%;
+}
+
+.calendar-days div span:nth-child(1) {
+    bottom: 0;
+    left: 0;
+}
+
+.calendar-days div span:nth-child(3) {
+    top: 0;
+    right: 0;
+}
+
+.calendar-days div span:nth-child(2),
+.calendar-days div span:nth-child(4) {
+    width: 0;
+    height: 2px;
+    background-color: var(--color-txt);
+}
+
+.calendar-days div:hover span:nth-child(2),
+.calendar-days div:hover span:nth-child(4) {
+    width: 100%;
+}
+
+.calendar-days div span:nth-child(2) {
+    top: 0;
+    left: 0;
+}
+
+.calendar-days div span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+}
+
+.calendar-days div:hover span:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.calendar-days div:hover span:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+.calendar-days div:hover span:nth-child(4) {
+    transition-delay: 0.6s;
+}
+
+.calendar-days div.curr-date,
+.calendar-days div.curr-date:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 50%;
+}
+
+.calendar-days div.curr-date span {
+    display: none;
+}
+
+.month-picker {
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.month-picker:hover {
+    background-color: var(--color-hover);
+}
+
+.year-picker {
+    display: flex;
+    align-items: center;
+}
+
+.year-change {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.year-change:hover {
+    background-color: var(--color-hover);
+}
+
+.calendar-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.toggle {
+    display: flex;
+}
+
+.toggle span {
+    margin-right: 10px;
+    color: var(--color-txt);
+}
+
+.dark-mode-switch {
+    position: relative;
+    width: 48px;
+    height: 25px;
+    border-radius: 14px;
+    background-color: var(--bg-second);
+    cursor: pointer;
+}
+
+.dark-mode-switch-ident {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: var(--bg-main);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.2s ease-in-out;
+}
+
+.dark .dark-mode-switch .dark-mode-switch-ident {
+    top: 2px;
+    left: calc(2px + 50%);
+}
+
+.month-list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-main);
+    padding: 20px;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
+    display: grid;
+    transform: scale(1.5);
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.month-list.show {
+    transform: scale(1);
+    visibility: visible;
+    pointer-events: visible;
+    transition: all 0.2s ease-in-out;
+}
+
+.month-list > div {
+    display: grid;
+    place-items: center;
+}
+
+.month-list > div > div {
+    width: 100%;
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--color-txt);
+}
+
+.month-list > div > div:hover {
+    background-color: var(--color-hover);
+}
+
+@keyframes to-top {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+/* Clock */ 
+
+.lowerPart {
+    background-color: rgb(4, 190, 66) ;
+    width: 33.15%;
+    height: 20vh;
+    position: absolute;
+    bottom: 27px;
+    right: 0;
+    border-radius: 10px;
+}
+
+
+/* Other Dashboard Tabs */ 
+
+.main {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    width: 81%;
+    height: 100vh;
+    transform: translateX(0%);
+    transition: 0.3s;
+}
+
+.middle-up {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 30%;
+    background-color: #c4e5e7;
+}
+
+.middle-up h1 {
+    font-size: 50px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+.middle-up .MiddleUpText {
+    position: absolute;
+    top: 20%;
+    left: 3%;
+}
+
+.middle {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+}
+
+.customer_dash {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    width: 81%;
+    height: 100vh; 
+    transform: translateX(100%);
+    transition: 0.3s;
+}
+
+.manager_dash {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    width: 81%;
+    height: 100vh; 
+    transform: translateX(100%);
+    transition: 0.3s;
+}
+
+.delivery_dash {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    width: 81%;
+    height: 100vh; 
+    transform: translateX(100%);
+    transition: 0.3s;
+}
+
+.menu_dash {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    width: 81%;
+    height: 100vh; 
+    transform: translateX(100%);
+    transition: 0.3s;
+}
+
+.event_dash {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    width: 81%;
+    height: 100vh; 
+    transform: translateX(0%);
+    transition: 0.3s;
+}
+
+.shipping_dash {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    width: 81%;
+    height: 100vh; 
+    transform: translateX(0%);
+    transition: 0.3s;
+}
+
+
+
